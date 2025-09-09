@@ -354,6 +354,627 @@ export const webStories = {
         "choices": [],
         "isEnding": true,
         "endingType": "good"
+      },
+      "coroner-report": {
+        "id": "coroner-report",
+        "text": "The coroner's report contains disturbing contradictions. Time of death is listed as 7:17 PM yesterday - matching the hit-and-run time exactly. But there are also fresh wounds consistent with being moved post-mortem. The coroner notes unusual positioning of the body and asks, 'Detective Kane, are you sure this woman wasn't moved after death? The lividity patterns don't match where she was found.'",
+        "choices": [
+          {
+            "text": "Admit you moved the body",
+            "nextNode": "confession"
+          },
+          {
+            "text": "Claim you found her that way",
+            "nextNode": "false-statement"
+          },
+          {
+            "text": "Request a second opinion",
+            "nextNode": "second-opinion"
+          }
+        ],
+        "isEnding": false,
+        "endingType": "neutral"
+      },
+      "twin-investigation": {
+        "id": "twin-investigation",
+        "text": "Records show Dr. Vasquez was an only child with no twins or siblings. Birth certificates, school records, and medical files all confirm she was unique. This eliminates any possibility of mistaken identity. The woman you hit with your car and the woman found in the study are definitely the same person. But how can someone die twice? Your investigation has led you full circle back to an impossible truth.",
+        "choices": [
+          {
+            "text": "Accept the supernatural explanation",
+            "nextNode": "supernatural-ending"
+          },
+          {
+            "text": "Look for rational explanations",
+            "nextNode": "rational-search"
+          },
+          {
+            "text": "Check your own mental state",
+            "nextNode": "psychiatric-help"
+          }
+        ],
+        "isEnding": false,
+        "endingType": "neutral"
+      },
+      "scene-authenticity": {
+        "id": "scene-authenticity",
+        "text": "Something about the crime scene feels wrong. The blood spatter doesn't match the supposed cause of death, and the body position is too perfect. Using luminol, you discover the real crime scene was cleaned and staged. This isn't where Dr. Vasquez died - someone moved her here and arranged everything to look like a murder. But who had access to stage this elaborate deception?",
+        "choices": [
+          {
+            "text": "Check building security footage",
+            "nextNode": "security-records"
+          },
+          {
+            "text": "Search for the real crime scene",
+            "nextNode": "real-scene-search"
+          },
+          {
+            "text": "Question building residents",
+            "nextNode": "resident-interviews"
+          }
+        ],
+        "isEnding": false,
+        "endingType": "neutral"
+      },
+      "blood-test": {
+        "id": "blood-test",
+        "text": "The blood test results come back within hours: it's Dr. Vasquez's blood, but also contains traces of your own DNA. This means you handled the card after she was bleeding. Lab analysis shows the blood was deposited approximately 12 hours ago - right around the time of the hit-and-run accident. The evidence is mounting against you, piece by piece.",
+        "choices": [
+          {
+            "text": "Confess to the accident",
+            "nextNode": "confession"
+          },
+          {
+            "text": "Claim contaminated evidence",
+            "nextNode": "evidence-challenge"
+          },
+          {
+            "text": "Demand a polygraph test",
+            "nextNode": "polygraph-test"
+          }
+        ],
+        "isEnding": false,
+        "endingType": "neutral"
+      },
+      "numerology-377": {
+        "id": "numerology-377",
+        "text": "Researching numerology, you discover that 377 represents 'karmic debt' and 'facing consequences for past actions.' Dr. Vasquez's notes elaborate: 'Number 377 indicates someone who must confront their hidden guilt. The universe will force truth to surface through synchronicities and numerical signs.' It's as if she predicted your investigation into your own crime.",
+        "choices": [
+          {
+            "text": "Embrace the karmic interpretation",
+            "nextNode": "karmic-acceptance"
+          },
+          {
+            "text": "Dismiss it as coincidence",
+            "nextNode": "dismiss-numerology"
+          },
+          {
+            "text": "Research more about guilt patterns",
+            "nextNode": "guilt-research"
+          }
+        ],
+        "isEnding": false,
+        "endingType": "neutral"
+      },
+      "station-call": {
+        "id": "station-call",
+        "text": "Calling the station reveals no record of prior contact with Dr. Vasquez. No case files, no consultation requests, no reason for her to have your business card. Sergeant Williams mentions, 'Strange you should ask, Kane. Dr. Vasquez called yesterday around 6 PM asking about you specifically. Said she had important information about a case. We told her to contact you directly.' She called an hour before the accident.",
+        "choices": [
+          {
+            "text": "Find out what information she had",
+            "nextNode": "vasquez-information"
+          },
+          {
+            "text": "Check your phone for missed calls",
+            "nextNode": "missed-calls"
+          },
+          {
+            "text": "Ask why she was asking about you",
+            "nextNode": "inquiry-motive"
+          }
+        ],
+        "isEnding": false,
+        "endingType": "neutral"
+      },
+      "personnel-file": {
+        "id": "personnel-file",
+        "text": "Dr. Vasquez had accessed your complete personnel file, including psychological evaluations and disciplinary records. She'd been researching officers with stress-related incidents, particularly those involving vehicles. A highlighted section shows your recent evaluation noted 'increased anxiety, sleep deprivation, and concerning lapses in memory.' Why was a numerologist researching troubled cops?",
+        "choices": [
+          {
+            "text": "Contact the police psychologist",
+            "nextNode": "police-psychologist"
+          },
+          {
+            "text": "Check if other officers were researched",
+            "nextNode": "other-officers"
+          },
+          {
+            "text": "Investigate her client list",
+            "nextNode": "client-investigation"
+          }
+        ],
+        "isEnding": false,
+        "endingType": "neutral"
+      },
+      "security-footage": {
+        "id": "security-footage",
+        "text": "The building's security cameras captured something incredible: at 2:47 AM, your patrol car pulls up to the building. You can be seen dragging a large, heavy object wrapped in plastic into the basement. Your movements are robotic, almost sleepwalking. At 3:15 AM, you emerge alone and drive away. The timestamp shows this was after the hit-and-run but hours before you 'discovered' the body. You have no memory of these actions.",
+        "choices": [
+          {
+            "text": "Turn yourself in immediately",
+            "nextNode": "immediate-confession"
+          },
+          {
+            "text": "Seek medical help for memory loss",
+            "nextNode": "medical-help"
+          },
+          {
+            "text": "Destroy the security footage",
+            "nextNode": "destroy-security"
+          }
+        ],
+        "isEnding": false,
+        "endingType": "neutral"
+      },
+      "hospital-records": {
+        "id": "hospital-records",
+        "text": "Hospital records show no Dr. Elena Vasquez was admitted last night, but there was a Jane Doe brought in at 8:30 PM with injuries consistent with a vehicle strike. She was pronounced dead on arrival. The body was released to the coroner's office at 11 PM, but mysteriously, it was signed out at 1 AM by someone using your badge number and forged signature.",
+        "choices": [
+          {
+            "text": "Check the coroner's office immediately",
+            "nextNode": "coroner-visit"
+          },
+          {
+            "text": "Review the security tape from the hospital",
+            "nextNode": "hospital-security"
+          },
+          {
+            "text": "Investigate who used your badge",
+            "nextNode": "badge-investigation"
+          }
+        ],
+        "isEnding": false,
+        "endingType": "neutral"
+      },
+      "suppress-memories": {
+        "id": "suppress-memories",
+        "text": "You try to push the disturbing memories down, but they keep surfacing like bodies in water. The rain, the thud, the silence afterward. Your hands shake as you attempt to focus on other evidence, but every sound, every shadow brings back fragments of that night. Your partner notices your distress and suggests taking a break. Maybe forgetting isn't possible when guilt weighs this heavy.",
+        "choices": [
+          {
+            "text": "Accept your partner's suggestion for a break",
+            "nextNode": "partner-break"
+          },
+          {
+            "text": "Continue investigating despite the stress",
+            "nextNode": "stress-investigation"
+          },
+          {
+            "text": "Confide in your partner about the memories",
+            "nextNode": "partner-confession"
+          }
+        ],
+        "isEnding": false,
+        "endingType": "neutral"
+      },
+      "document-evidence": {
+        "id": "document-evidence",
+        "text": "You carefully photograph the damage to your car from every angle. The evidence is undeniable: dent, scrapes, fabric, blood traces. As you document everything, you realize you're building a case against yourself. Each photo is another nail in your coffin, but maybe that's what justice requires. Dr. Vasquez deserves the truth, even if it destroys you.",
+        "choices": [
+          {
+            "text": "Submit the photos as evidence",
+            "nextNode": "submit-evidence"
+          },
+          {
+            "text": "Keep the photos as insurance",
+            "nextNode": "keep-photos"
+          },
+          {
+            "text": "Delete everything and walk away",
+            "nextNode": "delete-evidence"
+          }
+        ],
+        "isEnding": false,
+        "endingType": "neutral"
+      },
+      "house-search": {
+        "id": "house-search",
+        "text": "Dr. Vasquez's house reveals she'd been expecting trouble. Hidden cameras, multiple locks, and a safe containing files on various police officers - including you. She'd been investigating a pattern of cover-ups and suspicious incidents involving local law enforcement. Your file is the thickest, suggesting she'd been watching you for months, waiting for you to slip up.",
+        "choices": [
+          {
+            "text": "Read your complete file",
+            "nextNode": "complete-file"
+          },
+          {
+            "text": "Check the other officers' files",
+            "nextNode": "other-files"
+          },
+          {
+            "text": "Look for who she was reporting to",
+            "nextNode": "reporting-contact"
+          }
+        ],
+        "isEnding": false,
+        "endingType": "neutral"
+      },
+      "immediate-confession": {
+        "id": "immediate-confession",
+        "text": "Unable to bear the weight of evidence and guilt any longer, you walk directly to Captain Rodriguez's office. 'I need to confess to a crime,' you say, placing your badge and gun on his desk. The confession pours out of you like a dam bursting: the accident, the cover-up, the memory suppression. Captain Rodriguez listens in stunned silence as you destroy your own career and freedom with the truth.",
+        "choices": [],
+        "isEnding": true,
+        "endingType": "good"
+      },
+      "security-records": {
+        "id": "security-records",
+        "text": "Building security records show the most disturbing evidence yet: you have badge access to this building, granted three months ago during a consultation Dr. Vasquez was doing for the police department. The logs show you entering at 2:47 AM last night and leaving at 3:15 AM. The access was legitimate, but your purpose was not. Security footage confirms you dragged something heavy into the basement during those 28 minutes.",
+        "choices": [
+          {
+            "text": "Check what Dr. Vasquez was consulting about",
+            "nextNode": "consultation-details"
+          },
+          {
+            "text": "Review the basement security footage",
+            "nextNode": "basement-footage"
+          },
+          {
+            "text": "Turn yourself in before more evidence surfaces",
+            "nextNode": "preemptive-confession"
+          }
+        ],
+        "isEnding": false,
+        "endingType": "neutral"
+      },
+      "mannequin-prints": {
+        "id": "mannequin-prints",
+        "text": "Dusting the mannequin reveals only your own fingerprints - everywhere. Your prints are on the face, the clothes, the positioning. This means you didn't just move a body; you carefully arranged this entire scene. The mannequin was positioned to match how Dr. Vasquez would have looked if she'd been murdered in her study. But why stage such an elaborate deception when you could have just reported the accident?",
+        "choices": [
+          {
+            "text": "Try to remember staging the scene",
+            "nextNode": "staging-memories"
+          },
+          {
+            "text": "Analyze your psychological state",
+            "nextNode": "psychological-analysis"
+          },
+          {
+            "text": "Search for the real crime scene",
+            "nextNode": "real-scene-search"
+          }
+        ],
+        "isEnding": false,
+        "endingType": "neutral"
+      },
+      "witness-interviews": {
+        "id": "witness-interviews",
+        "text": "Thorough interviews reveal a troubling detail: Mrs. Chen from the corner shop saw a police car speed away after the impact, but she thought it was responding to the accident, not causing it. She noted the car number - yours. Her testimony, combined with the physical evidence, creates an unbreakable chain of proof. There's no escape from the truth now.",
+        "choices": [
+          {
+            "text": "Accept the inevitable and confess",
+            "nextNode": "inevitable-confession"
+          },
+          {
+            "text": "Try to discredit Mrs. Chen's testimony",
+            "nextNode": "discredit-witness"
+          },
+          {
+            "text": "Plan to flee the jurisdiction",
+            "nextNode": "plan-escape"
+          }
+        ],
+        "isEnding": false,
+        "endingType": "neutral"
+      },
+      "return-station": {
+        "id": "return-station",
+        "text": "Back at the station, you try to file a standard hit-and-run report, but your hands shake as you type. Every detail you record is evidence against yourself. Sergeant Williams notices your distress and asks if you need backup on the case. The irony is overwhelming - you need backup to investigate your own crime. How did it come to this?",
+        "choices": [
+          {
+            "text": "Ask for backup to maintain appearances",
+            "nextNode": "fake-backup"
+          },
+          {
+            "text": "Confess everything to Sergeant Williams",
+            "nextNode": "williams-confession"
+          },
+          {
+            "text": "Close the case as unsolvable",
+            "nextNode": "close-case"
+          }
+        ],
+        "isEnding": false,
+        "endingType": "neutral"
+      },
+      "cover-up-attempt": {
+        "id": "cover-up-attempt",
+        "text": "Panic overtakes rational thought as you try to dispose of Dr. Vasquez's body more permanently. But every action leaves more evidence, more traces, more lies to remember. The web of deception grows so complex that you start leaving yourself notes to keep track of your own lies. Eventually, you realize that the cover-up is worse than the original crime.",
+        "choices": [
+          {
+            "text": "Stop before you make it worse",
+            "nextNode": "stop-coverup"
+          },
+          {
+            "text": "Continue with the deception",
+            "nextNode": "deeper-deception"
+          },
+          {
+            "text": "Confess to minimize the damage",
+            "nextNode": "damage-control"
+          }
+        ],
+        "isEnding": false,
+        "endingType": "neutral"
+      },
+      "psychiatric-help": {
+        "id": "psychiatric-help",
+        "text": "Dr. Sarah Martinez, the police psychologist, listens to your fragmented memories with growing concern. 'Detective Kane, what you're describing sounds like dissociative behavior triggered by extreme guilt and trauma. It's possible you've been acting without conscious awareness.' Her diagnosis is both terrifying and relieving - you're not evil, but you're not in control either.",
+        "choices": [
+          {
+            "text": "Commit to intensive therapy",
+            "nextNode": "therapy-commitment"
+          },
+          {
+            "text": "Use the diagnosis as a legal defense",
+            "nextNode": "insanity-defense"
+          },
+          {
+            "text": "Reject the psychological explanation",
+            "nextNode": "reject-diagnosis"
+          }
+        ],
+        "isEnding": false,
+        "endingType": "neutral"
+      },
+      "show-psychiatrist": {
+        "id": "show-psychiatrist",
+        "text": "Dr. Martinez watches the traffic camera footage with professional detachment, then looks at you with deep concern. 'Marcus, this shows clear signs of a dissociative episode. You're moving mechanically, without normal emotional responses. The trauma of the accident triggered a complete psychological break. You need immediate help, not just legal counsel.'",
+        "choices": [
+          {
+            "text": "Accept psychiatric treatment",
+            "nextNode": "accept-treatment"
+          },
+          {
+            "text": "Focus on legal implications first",
+            "nextNode": "legal-focus"
+          },
+          {
+            "text": "Question the validity of the diagnosis",
+            "nextNode": "question-diagnosis"
+          }
+        ],
+        "isEnding": false,
+        "endingType": "neutral"
+      },
+      "scheduled-emails": {
+        "id": "scheduled-emails",
+        "text": "Dr. Vasquez's computer reveals an elaborate system of scheduled emails designed to activate if she missed daily check-ins. The emails contain evidence of police corruption, including photos, recordings, and documents. Your case is just one part of a larger investigation she was conducting. If you don't stop this now, dozens of officers will be exposed.",
+        "choices": [
+          {
+            "text": "Let the scheduled emails send",
+            "nextNode": "emails-send"
+          },
+          {
+            "text": "Try to stop the email system",
+            "nextNode": "stop-emails"
+          },
+          {
+            "text": "Warn the other officers",
+            "nextNode": "warn-officers"
+          }
+        ],
+        "isEnding": false,
+        "endingType": "neutral"
+      },
+      "ignore-threat": {
+        "id": "ignore-threat",
+        "text": "You delete the threatening email and try to forget about it, but the damage is already done. Within hours, copies of the traffic camera footage appear on local news websites with the headline 'Police Cover-Up: Detective Kills Woman, Stages Murder Scene.' Your phone explodes with calls from reporters, Internal Affairs, and horrified colleagues. Ignoring the truth only made its revelation more spectacular.",
+        "choices": [],
+        "isEnding": true,
+        "endingType": "bad"
+      },
+      "trace-sender": {
+        "id": "trace-sender",
+        "text": "Tracing the email leads you to a VPN routing through multiple servers, but the original IP address belongs to Dr. Vasquez's assistant, Maria Santos. She's been watching you since the accident, gathering evidence, waiting for the right moment to strike. When you call her, she says simply: 'Dr. Vasquez taught me that justice is just mathematics - every action has an equal and opposite reaction.'",
+        "choices": [
+          {
+            "text": "Meet with Maria to negotiate",
+            "nextNode": "negotiate-maria"
+          },
+          {
+            "text": "Report Maria for harassment",
+            "nextNode": "report-maria"
+          },
+          {
+            "text": "Confess before she releases evidence",
+            "nextNode": "preemptive-confession"
+          }
+        ],
+        "isEnding": false,
+        "endingType": "neutral"
+      },
+      "plead-accident": {
+        "id": "plead-accident",
+        "text": "You explain to Maria that it was truly an accident - poor visibility, Dr. Vasquez stepping out unexpectedly, split-second timing that couldn't be avoided. Maria listens, then shows you additional footage: you sitting in your car for fifteen minutes after the impact, methodically planning your next moves. 'Accidents don't require fifteen minutes of contemplation, Detective Kane.'",
+        "choices": [
+          {
+            "text": "Admit to the cover-up but not intent",
+            "nextNode": "partial-admission"
+          },
+          {
+            "text": "Claim temporary insanity",
+            "nextNode": "insanity-claim"
+          },
+          {
+            "text": "Accept full responsibility",
+            "nextNode": "full-responsibility"
+          }
+        ],
+        "isEnding": false,
+        "endingType": "neutral"
+      },
+      "false-statement": {
+        "id": "false-statement",
+        "text": "You lie to the coroner, claiming you found the body exactly as it appeared. But the coroner has decades of experience reading crime scenes and human nature. 'Detective Kane,' she says quietly, 'I've seen thousands of bodies in my career. This woman was moved, and moved by someone who cared about her dignity. The question is: why won't you tell me the truth?'",
+        "choices": [
+          {
+            "text": "Maintain the lie despite suspicion",
+            "nextNode": "maintain-lie"
+          },
+          {
+            "text": "Break down and confess",
+            "nextNode": "breakdown-confession"
+          },
+          {
+            "text": "Ask for legal representation",
+            "nextNode": "legal-representation"
+          }
+        ],
+        "isEnding": false,
+        "endingType": "neutral"
+      },
+      "second-opinion": {
+        "id": "second-opinion",
+        "text": "The second coroner confirms the original findings and adds disturbing new details: fiber evidence suggests the body was transported in a police vehicle, and time of death analysis proves she died hours before being placed in the study. Both coroners now suspect police involvement. Your request for a second opinion only provided more evidence against you.",
+        "choices": [
+          {
+            "text": "Come clean before they connect more dots",
+            "nextNode": "preventive-confession"
+          },
+          {
+            "text": "Try to frame another officer",
+            "nextNode": "frame-colleague"
+          },
+          {
+            "text": "Claim the evidence is contaminated",
+            "nextNode": "contamination-claim"
+          }
+        ],
+        "isEnding": false,
+        "endingType": "neutral"
+      },
+      "supernatural-ending": {
+        "id": "supernatural-ending",
+        "text": "Unable to find rational explanations, you conclude that Dr. Vasquez somehow returned from the dead to expose your crime. The guilt and supernatural terror drive you to complete madness. You spend your remaining years in a psychiatric facility, muttering about numbers and ghosts, never able to distinguish between reality and guilt-induced hallucinations.",
+        "choices": [],
+        "isEnding": true,
+        "endingType": "bad"
+      },
+      "rational-search": {
+        "id": "rational-search",
+        "text": "Determined to find logical explanations, you discover the truth: there is no supernatural element. Your guilt-ridden mind created elaborate scenarios to avoid facing the simple reality that you killed Dr. Vasquez in an accident and covered it up. The 'mysterious' clues were your own subconscious attempts to guide yourself to confession. Reality is often more disturbing than fantasy.",
+        "choices": [
+          {
+            "text": "Accept the psychological explanation",
+            "nextNode": "psychological-acceptance"
+          },
+          {
+            "text": "Seek professional help immediately",
+            "nextNode": "immediate-help"
+          },
+          {
+            "text": "Turn yourself in with this understanding",
+            "nextNode": "understanding-confession"
+          }
+        ],
+        "isEnding": false,
+        "endingType": "neutral"
+      },
+      "evidence-challenge": {
+        "id": "evidence-challenge",
+        "text": "You claim the blood evidence was contaminated during collection, but forensics has followed perfect chain-of-custody procedures. Your challenge only draws more attention to the evidence and makes you look desperate. The forensics team now subjects every piece of evidence to additional scrutiny, uncovering even more damning proof of your guilt.",
+        "choices": [
+          {
+            "text": "Abandon the challenge strategy",
+            "nextNode": "abandon-challenge"
+          },
+          {
+            "text": "Double down on contamination claims",
+            "nextNode": "double-down"
+          },
+          {
+            "text": "Confess before more evidence emerges",
+            "nextNode": "evidence-confession"
+          }
+        ],
+        "isEnding": false,
+        "endingType": "neutral"
+      },
+      "polygraph-test": {
+        "id": "polygraph-test",
+        "text": "The polygraph test is a disaster. Every question about the accident triggers massive physiological responses indicating deception. Even questions about your own name cause stress reactions because your guilt has become so pervasive. The examiner stops the test early, concerned about your psychological state. 'Detective Kane, I've never seen readings like this. You need help.'",
+        "choices": [
+          {
+            "text": "Confess after failed polygraph",
+            "nextNode": "polygraph-confession"
+          },
+          {
+            "text": "Claim the machine malfunctioned",
+            "nextNode": "machine-malfunction"
+          },
+          {
+            "text": "Request psychological evaluation",
+            "nextNode": "psych-evaluation"
+          }
+        ],
+        "isEnding": false,
+        "endingType": "neutral"
+      },
+      "karmic-acceptance": {
+        "id": "karmic-acceptance",
+        "text": "Embracing Dr. Vasquez's numerological interpretation, you see the investigation as cosmic justice working through mathematics. The number 377 led you here, 7:17 marked the moment of truth, and 777 represents completion of the karmic cycle. Perhaps this was always meant to happen. With this spiritual acceptance, confession feels less like destruction and more like liberation.",
+        "choices": [
+          {
+            "text": "Confess as part of karmic balance",
+            "nextNode": "karmic-confession"
+          },
+          {
+            "text": "Seek spiritual guidance first",
+            "nextNode": "spiritual-guidance"
+          },
+          {
+            "text": "Write a confession letter citing karma",
+            "nextNode": "karmic-letter"
+          }
+        ],
+        "isEnding": false,
+        "endingType": "neutral"
+      },
+      "dismiss-numerology": {
+        "id": "dismiss-numerology",
+        "text": "You dismiss the numerology as meaningless superstition, but the numbers continue to haunt you. 377 on license plates, 7:17 on every clock you see, 777 in phone numbers and addresses. Your rational mind rejects the pattern, but your guilt-ridden psyche sees significance everywhere. The numbers become a form of psychological torture that logic cannot escape.",
+        "choices": [
+          {
+            "text": "Seek therapy for obsessive thoughts",
+            "nextNode": "obsession-therapy"
+          },
+          {
+            "text": "Try to avoid all numbers",
+            "nextNode": "number-avoidance"
+          },
+          {
+            "text": "Confess to stop the mental torment",
+            "nextNode": "torment-confession"
+          }
+        ],
+        "isEnding": false,
+        "endingType": "neutral"
+      },
+      "guilt-research": {
+        "id": "guilt-research",
+        "text": "Researching guilt patterns in Dr. Vasquez's notes, you find a detailed psychological profile that describes you perfectly: 'Subject shows classic signs of suppressed trauma. Will likely create elaborate scenarios to avoid direct confrontation with guilt. Recommend immediate intervention before subject causes harm to self or others.' She was trying to help you before you killed her.",
+        "choices": [
+          {
+            "text": "Honor her attempt to help by confessing",
+            "nextNode": "honor-help"
+          },
+          {
+            "text": "Feel angry that she was analyzing you",
+            "nextNode": "analysis-anger"
+          },
+          {
+            "text": "Seek the intervention she recommended",
+            "nextNode": "seek-intervention"
+          }
+        ],
+        "isEnding": false,
+        "endingType": "neutral"
       }
     }
   }
