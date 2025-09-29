@@ -1,6 +1,6 @@
 // LocalEditorApp.js - Full editing capabilities for your local use
 import React from 'react';
-import { ChevronRight, Book, Plus, Edit, Trash2, Home, Play, Download, Upload } from 'lucide-react';
+import { Book, Plus, Edit, Trash2, Home, Download, Upload } from 'lucide-react';
 
 // ============================================================================
 // DATA CLASSES
