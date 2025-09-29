@@ -2353,8 +2353,6 @@ export const webStories = {
         "endingType": "neutral"
       },
       
-      // Final ending nodes that were missing
-      
       "federal-cooperation": {
         "id": "federal-cooperation",
         "text": "You cooperate fully with federal investigators, helping expose the systemic problems that led to your breakdown. Your case becomes a catalyst for police reform and better psychological screening. Though you face serious charges, your cooperation helps prevent similar tragedies. Sometimes destruction can lead to reconstruction.",
